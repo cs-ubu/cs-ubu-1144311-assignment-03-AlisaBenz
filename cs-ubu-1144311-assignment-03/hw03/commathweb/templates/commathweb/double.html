@@ -1,0 +1,39 @@
+{% extends 'commathweb/base1.html' %}
+
+{% block content %}
+
+
+			<form action="#" method="GET" class="contact200-form validate-form">
+				<h1>IEEE floating point double precision (64-bit)</h1>
+				<div class="wrap-input100 validate-input">
+					<!-- <input id="name" class="input300" type="text" name="num" placeholder="Full name" value="{{ num }}"> -->
+					<input id="name" class="input100" type="number" placeholder="1.000" step="any" min="0" max="9999999" name="num" value="{{ x }}">
+					<span class="focus-input100"></span>
+					<label class="label-input100" for="name">
+						<span class="lnr lnr-user m-b-2"></span>
+					</label>
+				</div>
+
+				<div class="wrap-input100 validate-input">
+					<div class="jumbotron">
+						<div class="row">
+							<div class="col-md">
+								ผลลัพธ์<hr><span class="col-md-3">{{ answer }}</span>							
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="container-contact200-form-btn">
+					<button class="contact200-form-btn">
+						แปลง
+					</button>
+				</div> 
+			</form>
+
+		</div>
+	</div> <!-- end contact200 -->
+
+{% endblock %}	
+

@@ -15,7 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from commathweb import views 
 
 urlpatterns = [
+    path('', views.index),
+    path('single/', views.single),
+    # path('base/', views.base),
+    path('double/', views.double),
+    path('linear/', views.linear),
+    path('solve/',views.solve),
     path('admin/', admin.site.urls),
 ]

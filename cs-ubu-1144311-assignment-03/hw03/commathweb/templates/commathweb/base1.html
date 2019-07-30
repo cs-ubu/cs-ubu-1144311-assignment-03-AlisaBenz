@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>COMMATH WEB</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="{% static 'commathweb/images/icons/favicon.ico' %}"/>
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="{% static 'commathweb/vendor/bootstrap/css/bootstrap.min.css' %}">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="{% static 'commathweb/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="{% static 'commathweb/fonts/iconic/css/material-design-iconic-font.min.css' %}">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="{% static 'commathweb/fonts/Linearicons-Free-v1.0.0/icon-font.min.css' %}">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="{% static 'commathweb/vendor/animate/animate.css' %}">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="{% static 'commathweb/vendor/css-hamburgers/hamburgers.min.css' %}">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="{% static 'commathweb/vendor/animsition/css/animsition.min.css' %}">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="{% static 'commathweb/vendor/select2/select2.min.css' %}">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="{% static 'commathweb/vendor/daterangepicker/daterangepicker.css' %}">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="{% static 'commathweb/css/util.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'commathweb/css/main.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'commathweb/css/main200.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'commathweb/css/main300.css' %}">
+	<!--===============================================================================================-->
+	
+</head>
+<body style="background-color:powderblue;">
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">COMMATH WEB</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <!-- <li class="active"><a href="#">Home</a></li> -->
+      <li><a href="/single/"> IEEE floating point single precision (32-bit) </a></li>
+	  <li><a href="/double/">IEEE floating point double precision (64-bit)</a></li>
+	  <li><a href="/linear/">แก้ระบบสมการเชิงเส้น $Ax = b$</a></li>
+    </ul>
+    <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="form-group">
+        <!-- <input type="text" class="form-control" placeholder="Search" name="search"> -->
+      </div>
+      <!-- <button type="submit" class="btn btn-default">Submit</button> -->
+    </form>
+  </div>
+</nav>
+</body>
+</html>
+
+	{% block content %}
+
+	{% endblock %}
+

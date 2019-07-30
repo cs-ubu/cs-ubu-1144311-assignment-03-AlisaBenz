@@ -1,0 +1,31 @@
+{% extends 'commathweb/base1.html' %}
+
+{% block content %}
+
+{% csrf_token %} 
+	
+
+			
+
+			<form class="contact300-form validate-form" action="/solve/" method="GET">
+				<h1>แก้ระบบสมการเชิงเส้น $Ax = b$</h1>
+				<div class="wrap-input300 validate-input">
+					<input id="name" class="input300" type="number" name="name1" placeholder="กรุณาใส่จำนวนสมการ">
+					<span class="focus-input300"></span>
+					<label class="label-input300" for="name">
+						<span class="lnr lnr-user m-b-2"></span>
+					</label>
+				</div>
+
+
+				<div class="container-contact300-form-btn">
+					<button class="contact300-form-btn">
+						See the answer
+					</button>
+				</div>
+			</form>
+
+		</div>
+	</div>
+
+{% endblock %}	

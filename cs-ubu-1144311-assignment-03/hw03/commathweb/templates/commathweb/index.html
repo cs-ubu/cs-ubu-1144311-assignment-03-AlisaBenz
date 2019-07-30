@@ -1,0 +1,19 @@
+{% extends 'commathweb/base.html' %}
+{% block content %}
+<div class="container" style="padding-top: 50px;">
+    <div class="row">
+        <div class="calendar_entry col-lg-4">
+            <form action="#" method="get">
+                    <input type="number" placeholder="1.0" step="any" min="0" max="9999999" name="num">
+                    <button class="btn btn-primary">ดูรายละเอียด</button>
+                    <div class="jumbotron">
+                        <div class="row">
+                            <div class="col-md">b = {{ answer }}</div>
+                        </div>
+                    </div>
+            </form>
+                
+        </div>
+    </div>
+</div>
+{% endblock %}
